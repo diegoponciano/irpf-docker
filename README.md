@@ -20,7 +20,7 @@ docker run --rm \
     -e _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v ~/ProgramasRFB:/home/irpf/ProgramasRFB \
-    rochacbruno/irpf
+    diegoponciano/irpf
 
 xhost -local:docker
 ```
@@ -28,7 +28,7 @@ xhost -local:docker
 ## buildar e rodar, localmente
 
 ```bash
-git clone https://github.com/rochacbruno/irpf-docker.git
+git clone https://github.com/diegoponciano/irpf-docker.git
 cd irpf-docker
 
 mkdir ~/ProgramasRFB  # ignore caso vc ja tenha a pasta de anos anteriores
@@ -55,8 +55,9 @@ Sua ajuda é muito bem-vinda! Se virar o ano e eu não atualizar a imagem, ou se
 
 ## Créditos
 
-Imagem do carne leão do aurelio/
-https://github.com/aureliojargas/carne-leao-docker
+Inspirado pelo [rochacbruno/irpf-docker](https://github.com/rochacbruno/irpf-docker), mas atualizado pra 2021.
+
+Imagem do carne leão do aurelio: https://github.com/aureliojargas/carne-leao-docker
 
 Inspirado pelo [andresmrm/docker-irpf](https://github.com/andresmrm/docker-irpf), que disponibilizou o programa principal do IRPF numa imagem com o Alpine Linux.
 
